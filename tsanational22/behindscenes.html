@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Conference Page -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Welcome to the Void Developers Conference">
+    
+    <title>Behind-the-Scenes | Void Developers Conference</title>
+
+    <!-- Bootstrap and Overrides -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+
+    <!-- Bootstrap JS -->
+    <script type="text/javascript" src="js/bootstrap.js"></script>  
+
+    <!-- Imports Site Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet"> 
+
+    <!--load all Font Awesome styles -->
+    <link href="/fontawesome5/css/all.css" rel="stylesheet">
+
+    <!-- favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#885bd5">
+    <meta name="msapplication-TileColor" content="#603cba">
+    <meta name="theme-color" content="#ffffff">
+</head>
+
+<body class="d-flex flex-column behindTheScenesBody">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top p-0">
+        <div class="container">
+            <a class="navbar-brand" href="/" id="navImgA">
+                <img src="images/new logos/2x/Asset 1@2x.png" alt="Void Entertainment Logo" id="navImgImg" class="align-center">
+            </a>
+
+            <!-- Mobile Nav Button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <span class="me-auto"></span>
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/schedule.html">Schedule</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/history.html">History</a>
+                    </li>
+                    <li class="nav-item d-none d-lg-block">
+                        <span class="nav-link">|</span>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/interviews.html">Interviews</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active disabled" href="/behindscenes.html">Behind-the-scenes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/demos.html">Demos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/shop.html">Shop</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="d-flex behindScenesMain align-items-stretch">
+        <div class="container d-flex align-items-center h-auto my-5">
+            <div class="row my-auto">
+                <!-- Semi-call to action text -->
+                <div class="col-12 text-light my-4">
+                    <p>At Void Entertainment and many other studios around the globe, small teams work on the individual aspects of a game.  Surprisingly, there's much more to game making than what the player sees.  Click on the offices below to explore just a few of the aspects of making a video game!</p>
+                </div>
+                <!-- Door 1: Documentation -->
+                <div class="col-xl-3 col-sm-6 col-12 text-center">
+                    <p class="h3 text-light">Documentation</p>
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#modalBehind1">
+                        <img src='images/blank.png' alt='Door to Documentation Office' class="mb-4 doors">
+                    </a>
+                </div> 
+                <!-- Door 2: Concept Art -->
+                <div class="col-xl-3 col-sm-6 col-12 text-center">
+                    <p class="h3 text-light">Concept Art</p>
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#modalBehind2">
+                        <img src='images/blank.png' alt='Door to Concept Art Office' class="mb-4 doors">
+                    </a>
+                    
+                </div> 
+                <!-- Door 3: Programming -->
+                <div class="col-xl-3 col-sm-6 col-12 text-center">
+                    <p class="h3 text-light">Programming</p>
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#modalBehind3">
+                        <img src='images/blank.png' alt='Door to Programming Office' class="mb-4 doors">
+                    </a>
+                </div>  
+                <!-- Door 4: Advertising -->
+                <div class="col-xl-3 col-sm-6 col-12 text-center">
+                    <p class="h3 text-light">Advertising</p>
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#modalBehind4">
+                        <img src='images/blank.png' alt='Door to Advertising Office' class="mb-4 doors">
+                    </a>
+                </div> 
+            </div>
+        </div>
+        
+        
+
+
+        <!-- modals -->
+        <!-- Door 1 Modal -->
+        <div>
+            <div class="modal fade" id="modalBehind1" tabindex="-1" aria-labelledby="behindScenes1" aria-hidden="true">
+                <div class="modal-dialog modal-xl modal-fullscreen-md-down modal-dialog-centered object-modal">
+                    <div class="modal-content vh-75">
+                        <div class="modal-header modalBehind bg-dark text-light">
+                            <h5 class="modal-title">Documentation</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body modalBehind bg-dark text-light container-fluid d-flex">
+                                <div class="row justify-content-center w-100">
+                                    <div class="col-12 col-lg-4 modal-scroll">
+                                        <h5>What is a GDD?</h5>
+                                        <p>
+                                            A Game Design Document (known shortly as a GDD) is a document that sets the vision for a game early on in the production cycle.  It can also be used to detail out a demo of a game as you can see here.  Feel free to read through this GDD of an indie game that you will be able to play on Day 2 of the conference!
+                                        </p>
+                                        <a class="animatedButton" href="/gameDesignDocument.pdf" target="_blank">
+                                            <button class="btn btn-primary pdfButton mb-4"><i class="fas fa-file-pdf"></i> Click here to view or download the GDD</button>
+                                        </a>
+                                    </div>
+                                    <div class="col-12 col-lg-8 modal-object-img-div text-center align-items-center d-flex">
+                                        <!-- <video width="720" height="480" controls> -->
+                                            <!-- <source src="images/Sequence 01.mp4" type="video/mp4"> -->
+                                            
+                                        <!-- </video> -->
+                                        <!-- <div id="carouselExampleControls" class="carousel slide col-12 vh-75" data-bs-ride="carousel">
+                                            <div class="carousel-inner">
+                                              <div class="carousel-item active">
+                                                <img src="images/gdd/gameDesignDocument1024_1.jpg" class="d-block h-100 mx-auto" alt="...">
+                                              </div>
+                                              <div class="carousel-item">
+                                                <img src="images/gdd/gameDesignDocument1024_2.jpg" class="d-block h-100 mx-auto" alt="...">
+                                              </div>
+                                              <div class="carousel-item">
+                                                <img src="images/gdd/gameDesignDocument1024_3.jpg" class="d-block w-auto vh-75 mx-auto" alt="...">
+                                              </div>
+                                              <div class="carousel-item">
+                                                <img src="images/gdd/gameDesignDocument1024_4.jpg" class="d-block w-auto vh-75 mx-auto" alt="...">
+                                              </div>
+                                              <div class="carousel-item">
+                                                <img src="images/gdd/gameDesignDocument1024_5.jpg" class="d-block w-auto vh-75 mx-auto" alt="...">
+                                              </div>
+                                              <div class="carousel-item">
+                                                <img src="images/gdd/gameDesignDocument1024_6.jpg" class="d-block w-auto vh-75 mx-auto" alt="...">
+                                              </div>
+                                              <div class="carousel-item">
+                                                <img src="images/gdd/gameDesignDocument1024_7.jpg" class="d-block w-auto vh-75 mx-auto" alt="...">
+                                              </div>
+                                              <div class="carousel-item">
+                                                <img src="images/gdd/gameDesignDocument1024_8.jpg" class="d-block w-auto vh-75 mx-auto" alt="...">
+                                              </div>
+                                              <div class="carousel-item">
+                                                <img src="images/gdd/gameDesignDocument1024_9.jpg" class="d-block w-auto vh-75 mx-auto" alt="...">
+                                              </div>
+                                              <div class="carousel-item">
+                                                <img src="images/gdd/gameDesignDocument1024_10.jpg" class="d-block w-auto vh-75 mx-auto" alt="...">
+                                              </div>
+                                              <div class="carousel-item">
+                                                <img src="images/gdd/gameDesignDocument1024_11.jpg" class="d-block w-auto vh-75 mx-auto" alt="...">
+                                              </div>
+                                            </div>
+                                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                              <span class="visually-hidden">Previous</span>
+                                            </button>
+                                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                              <span class="visually-hidden">Next</span>
+                                            </button>
+                                        </div> -->
+                                        <embed src="/gameDesignDocument.pdf" class="w-100 h-100">
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Door 2 Modal -->
+        <div>
+            <div class="modal fade" id="modalBehind2" tabindex="-1" aria-labelledby="behindScenes2" aria-hidden="true">
+                <div class="modal-dialog modal-xl modal-fullscreen-md-down modal-dialog-centered object-modal">
+                    <div class="modal-content">
+                        <div class="modal-header modalBehind bg-dark text-light">
+                            <h5 class="modal-title">Concept Art</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body modalBehind bg-dark text-light container-fluid d-flex">
+                                <div class="row justify-content-center my-auto">
+                                    <div class="col-12 col-md-4 modal-scroll">
+                                        <p>
+                                            Early in a project, it can be good to get a feel for how the environments within the game might look to the player.  Here are a few example of early drawings and renders taken from a game created by an independent creator.
+                                        </p>
+                                    </div>
+                                    <div class="col-12 col-md-8 modal-object-img-div text-center d-flex align-items-center justify-content-center">
+                                        <div class="container vh-50">
+                                            <div class="row">
+                                                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                                                    <div class="carousel-inner">
+                                                      <div class="carousel-item active">
+                                                        <img src="images/a.jpg" class="d-block w-100" alt="...">
+                                                      </div>
+                                                      <div class="carousel-item">
+                                                        <img src="images/b.jpg" class="d-block w-100" alt="...">
+                                                      </div>
+                                                      <div class="carousel-item">
+                                                        <img src="images/c.jpg" class="d-block w-100" alt="...">
+                                                      </div>
+                                                      <div class="carousel-item">
+                                                        <img src="images/car.jpg" class="d-block w-100" alt="...">
+                                                      </div>
+                                                      <div class="carousel-item">
+                                                        <img src="images/frontpage.jpg" class="d-block w-100" alt="...">
+                                                      </div>
+                                                    </div>
+                                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                                                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                      <span class="visually-hidden">Previous</span>
+                                                    </button>
+                                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                                                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                      <span class="visually-hidden">Next</span>
+                                                    </button>
+                                                  </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Door 3 Modal -->
+        <div>
+            <div class="modal fade" id="modalBehind3" tabindex="-1" aria-labelledby="behindScenes3" aria-hidden="true">
+                <div class="modal-dialog modal-xl modal-fullscreen-md-down modal-dialog-centered object-modal">
+                    <div class="modal-content">
+                        <div class="modal-header modalBehind bg-dark text-light">
+                            <h5 class="modal-title">Programming</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body modalBehind bg-dark text-light container-fluid d-flex">
+                                <div class="row justify-content-center my-auto">
+                                    <div class="col-12 col-md-4 modal-scroll">
+                                        <p>
+                                            Even though it is extremely important, programming is just one part of the story of building a video game.  Programmers work to design the individual mechanics of a game, how things interact with the environment and each other, and help to manage user interfaces just to name a few things.  Here is an example of some code a programmer could put into their game to control a 3rd person camera.
+                                        </p>
+                                    </div>
+                                    <div class="col-12 col-md-8 modal-object-img-div text-center">
+                                        <image src="images/thirdPersonCode.JPG" class="w-100">
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Door 4 Modal -->
+        <div>
+            <div class="modal fade" id="modalBehind4" tabindex="-1" aria-labelledby="behindScenes4" aria-hidden="true">
+                <div class="modal-dialog modal-xl modal-fullscreen-md-down modal-dialog-centered object-modal">
+                    <div class="modal-content">
+                        <div class="modal-header modalBehind bg-dark text-light">
+                            <h5 class="modal-title">Advertising</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body modalBehind bg-dark text-light container-fluid d-flex">
+                                <div class="row justify-content-center my-auto">
+                                    <div class="col-12 col-md-4 modal-scroll">
+                                        <p>
+                                            When a project is finished, it is important to give your fans a tease in what they will be experiencing in this new game.  Putting together a trailer can really help to build hype towards the game's release.  Here is a sneak preview of a game being unveiled on Day 2 of the conference!
+                                        </p>
+                                    </div>
+                                    <div class="col-12 col-md-8 modal-object-img-div text-center">
+                                        <video width="720" height="480" controls class="w-100"> -->
+                                            <source src="images/Trailer_1.mp4" type="video/mp4">
+                                            Your browser does not support the video tag.
+                                        </video>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer mt-auto bg-dark py-3 text-light">
+        <div class="container">
+            <div class="row px-2 mt-2">
+                <!-- Void Entertainment Logo Column -->
+                <div class="col-md-4 col-12 mb-md-0 mb-3 text-left">
+                    <img src="images/voidlogolight.svg" width="160" alt="Void Entertainment Logo">
+                </div>
+                <!-- Contact Column -->
+                <div class="col-md-4 col-12 mb-md-0 mb-2">
+                    <p class="m-0">Contact Us!</p>
+                    <p class="m-0"><i class="fas fa-phone-alt"></i> (206) 555-1212</p>
+                    <p class="m-0"><i class="fas fa-envelope"></i> info@voidentertainmentus.com</p>
+                </div>
+                <!-- Social Media Column -->
+                <div class="col-md-4 col-12 mb-md-0 mb-2">
+                    <p class="m-0">Keep up with our latest projects @VoidEntertainmentDevs</p>
+                    <p class="mt-2">
+                        <a href="http://facebook.com" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="http://twitter.com" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="http://instagram.com" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="http://linkedin.com" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="http://behance.net" target="_blank" aria-label="Behance"><i class="fab fa-behance"></i></a>
+                    </p>
+                </div>
+            </div>
+            <!-- Bottom Footer Row -->
+            <div class="row align-items-center px-2">
+                <span class="col-12">TSA Team 1795 | <a href="/references.html" class="link-light">References</a> | &copy; 2022</span>
+            </div>
+        </div>
+    </footer>     
+</body>
+</html>

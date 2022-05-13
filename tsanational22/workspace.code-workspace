@@ -1,0 +1,12 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "national",
+		"clock.active": true,
+		"liveServer.settings.port": 5503
+	}
+}

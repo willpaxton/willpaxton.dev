@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Conference Page -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Welcome to the Void Developers Conference">
+    
+    <title>Interviews | Void Developers Conference</title>
+
+    <!-- Bootstrap and Overrides -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+
+    <!-- Bootstrap JS -->
+    <script type="text/javascript" src="js/bootstrap.js"></script>  
+
+    <!-- Imports Site Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet"> 
+
+    <!--load all Font Awesome styles -->
+    <link href="/fontawesome5/css/all.css" rel="stylesheet">
+
+    <!-- favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#885bd5">
+    <meta name="msapplication-TileColor" content="#603cba">
+    <meta name="theme-color" content="#ffffff">
+</head>
+
+<body class="d-flex flex-column">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top p-0">
+        <div class="container">
+            <a class="navbar-brand" href="/" id="navImgA">
+                <img src="images/new logos/2x/Asset 1@2x.png" alt="Void Entertainment Logo" id="navImgImg" class="align-center">
+            </a>
+
+            <!-- Mobile Nav Button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <span class="me-auto"></span>
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/schedule.html">Schedule</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/history.html">History</a>
+                    </li>
+                    <li class="nav-item d-none d-lg-block">
+                        <span class="nav-link">|</span>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active disabled" href="/interviews.html">Interviews</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/behindscenes.html">Behind-the-scenes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/demos.html">Demos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/shop.html">Shop</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="flex-shrink-0 bg-dark text-light">
+        <div class="pageConfHeader">
+            <div class="container">
+                <div class="row  text-center">
+                    <h1 class="my-5">Interviews</h1>
+                </div>
+            </div>
+        </div>
+
+
+<!-- I think that the best way to approach this is to create the backgrounds in photoshop, then use a flexbox to put the text at the bottom of the section, just wrap this all in an a tag to make it a button and make that lead to a modal -->
+
+        <div class="container mt-4">
+            <p class="p-3">Here you can hear from the developers themselves!  Make sure to check on their projects <a href="demos.html">on the demos page.</a></p>
+        </div>
+
+        <!-- Images that trigger modals to pop up -->
+        <div class="container mb-5">
+            <div class="row">
+                <button type="button" class="modalButton btn btn-primary col-xl-3 col-md-6 col-6 p-4" data-bs-toggle="modal" data-bs-target="#modalInt1" aria-labelledby="Jack Barmingham CEO of Void Entertainment">
+                    <img src="images/interviews/1x/Asset 1.png" width="100%" alt="Button to Access Interview with Jack Barmingham">
+                </button>
+                <button type="button" class="modalButton btn btn-primary col-xl-3 col-6 p-4" data-bs-toggle="modal" data-bs-target="#modalInt2" aria-labelledby="Cali Shelia Indie Musician">
+                    <img src="images/interviews/1x/Asset 2.png" width="100%" alt="Button to Access Interview with Cali Shelia">
+                </button>
+                <button type="button" class="modalButton btn btn-primary col-xl-3 col-6 p-4" data-bs-toggle="modal" data-bs-target="#modalInt3" aria-labelledby="Carl Chesley Story Writer">
+                    <img src="images/interviews/1x/Asset 3.png" width="100%" alt="Button to Access Interview with Carl Chesley">
+                </button>
+                <button type="button" class="modalButton btn btn-primary col-xl-3 col-6 p-4" data-bs-toggle="modal" data-bs-target="#modalInt4" aria-labelledby="Avery Kario Programmer">
+                    <img src="images/interviews/1x/Asset 4.png" width="100%" alt="Button to Access Interview with Avery Kairo">
+                </button>
+            </div>
+        </div>
+
+
+
+        <!-- modals div -->
+        <!-- Jack Barmingham Modal -->
+        <div>
+            <div class="modal fade" id="modalInt1" tabindex="-1" aria-labelledby="Interview1" aria-hidden="true">
+                <div class="modal-dialog modal-fullscreen-lg-down modal-xl modal-dialog-centered modal-dialog-scrollable object-modal">
+                    <div class="modal-content">
+                        <div class="modal-header bg-dark">
+                            <h5 class="modal-title">Jack Barmingham</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body bg-dark">
+                            <div class="row">
+                                <div class="col-12 col-md-6 modal-object-img-div">
+                                    <img class="modalImg d-none d-lg-block" src="images/portrait1.jpg" alt="Portrait of Jack Barmingham" width="100%">
+                                </div>
+                                <div class="col-12 col-md-6 modal-scroll">
+                                    <h5>Q: What led you to fall in love with game making in the first place?</h5>
+                                    <p>
+                                        A: When I was growing up, I always loved to create alternate realities in my own mind, but I had no real way to bring them to life.  As I got older, when I had some free time I began to learn how to program a game, how to create the visuals, how to write a captivating story, and the passion gre from there.  I ended up changing from my standard office job to creating video games for all to play.  Eventually, I was contacted about an opportunity to help even more people like me create their dreams, and I accepted the job here at Void Entertainment.
+                                    </p>
+                                    <h5>Q: What has your role been Void Entertainment?</h5>
+                                    <p>
+                                        A: Ever since I joined, I have overseen operations in many different aspects of the company.  First, I oversee nearly every aspect of the company.  I ensure that these passion projects of our developers will make it to market with great reception from our audiences.  I also help in a some programming myself from time to time!  That is where my passion for game making started and it is good to return to my roots from time to time.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Cali Shelia Modal -->
+        <div>
+            <div class="modal fade" id="modalInt2" tabindex="-1" aria-labelledby="Interview2" aria-hidden="true">
+                <div class="modal-dialog modal-fullscreen-lg-down modal-xl modal-dialog-centered object-modal">
+                    <div class="modal-content bg-dark">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Cali Shelia</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body bg-dark">
+                            <div class="row">
+                                <div class="col-12 col-md-6 modal-object-img-div">
+                                    <img class="modalImg d-none d-lg-block" src="images/portrait2.jpg" alt="Portrait of Cali Shelia" width="100%">
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <h5>Q: How did you get associated with video game making?</h5>
+                                    <p>
+                                        A: Ever since I was a little kid, I've always loved playing video games.  I especially grew fond of rythm games, which directly led to a passion in music.  I began making music on the family computer and posting it online for others to listen to.  Later on, I was contacted by a small team who needed music for their new game, which is how I've ended up with a job in video game music creation.
+                                    </p>
+                                    <h5>Q: How did you get associated with the Void Developers Conference?</h5>
+                                    <p>
+                                        A: Some of my work has been published in games through Void Entertainment in the past.  They have been a great company to work with and their efforts through the Void Developers Conference have inspired me and many others to keep pursuing our passions without the fear of them turning into a burden.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Carl Chesley -->
+        <div>
+            <div class="modal fade" id="modalInt3" tabindex="-1" aria-labelledby="Interview3" aria-hidden="true">
+                <div class="modal-dialog modal-fullscreen-lg-down modal-xl modal-dialog-centered object-modal">
+                    <div class="modal-content">
+                        <div class="modal-header bg-dark">
+                            <h5 class="modal-title">Carl Chesley</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body bg-dark">
+                            <div class="row">
+                                <div class="col-12 col-md-6 modal-object-img-div">
+                                    <img class="modalImg d-none d-lg-block" src="images/portrait3.jpg" alt="Portrait of Carl Chesley" width="100%">
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <h5>Q: Why do you specifically enjoy story writing?</h5>
+                                    <p>
+                                        A: I've always loved seeing characters and settings come to life.  Being able to be the creator for a whole new world of ideas bring me immense joy.  I got involved with video game story writing just a few years ago, when a developer had liked my word and asked if I would want to partner on a project.  It is still in development, but I'm excited for what's to come!
+                                    </p>
+                                    <h5>Q: What is your most favorite story you've written?</h5>
+                                    <p>
+                                        A: My favorite story was one about an astronaut who got lost on a random planet with no way to contact earth.  It was honestly fun to come up with unique challenges and problems for the protagonist.  I can't say much more because it could be making its way into a game soon!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Avery Kairo -->
+        <div>
+            <div class="modal fade" id="modalInt4" tabindex="-1" aria-labelledby="Interview4" aria-hidden="true">
+                <div class="modal-dialog modal-fullscreen-lg-down modal-xl modal-dialog-centered object-modal">
+                    <div class="modal-content">
+                        <div class="modal-header bg-dark">
+                            <h5 class="modal-title">Avery Kairo</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body bg-dark">
+                            <div class="row">
+                                <div class="col-12 col-md-6 modal-object-img-div">
+                                    <img class="modalImg d-none d-lg-block" src="images/portrait4.jpg" alt="Portrait of Avery Kairo" width="100%">
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <h5>Q: What is your favorite thing about programming? </h5>
+                                    <p>
+                                        A: I really love seeing my work slowly build up a virtual world in which I can choose what happens. I also love problem solving and being able to put my skills to use really gives me a sense of accomplishment.  
+                                    </p>
+                                    <h5>Q: What projects have you been working on? </h5>
+                                    <p>
+                                        A: Lately, I've been working on a passion project that I've dreamed of making since I was a little kid.  I've always wanted a game that utilizes movement to traverse a city.  The game I am creating has parkour, grappling hooks, and other elements to allow anyone to feel as if they can travel anywhere by foot.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer mt-auto bg-dark py-3 text-light">
+        <div class="container">
+            <div class="row px-2 mt-2">
+                <!-- Void Entertainment Logo Column -->
+                <div class="col-md-4 col-12 mb-md-0 mb-3 text-left">
+                    <img src="images/voidlogolight.svg" width="160" alt="Void Entertainment Logo">
+                </div>
+                <!-- Contact Column -->
+                <div class="col-md-4 col-12 mb-md-0 mb-2">
+                    <p class="m-0">Contact Us!</p>
+                    <p class="m-0"><i class="fas fa-phone-alt"></i> (206) 555-1212</p>
+                    <p class="m-0"><i class="fas fa-envelope"></i> info@voidentertainmentus.com</p>
+                </div>
+                <!-- Social Media Column -->
+                <div class="col-md-4 col-12 mb-md-0 mb-2">
+                    <p class="m-0">Keep up with our latest projects @VoidEntertainmentDevs</p>
+                    <p class="mt-2">
+                        <a href="http://facebook.com" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="http://twitter.com" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="http://instagram.com" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="http://linkedin.com" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="http://behance.net" target="_blank" aria-label="Behance"><i class="fab fa-behance"></i></a>
+                    </p>
+                </div>
+            </div>
+            <!-- Bottom Footer Row -->
+            <div class="row align-items-center px-2">
+                <span class="col-12">TSA Team 1795 | <a href="/references.html" class="link-light">References</a> | &copy; 2022</span>
+            </div>
+        </div>
+    </footer>    
+</body>
+</html>
