@@ -117,7 +117,7 @@ button {
 .bullet::after {
     content: "";
     top: -17px;
-    left: -30px;
+    left: -29px;
     font-size: 3em;
     width: 10px;
     height: 10px;
@@ -266,4 +266,8 @@ button {
 
 .carousel-control-prev, .carousel-control-next {
     background-color: rgb(0,0,0,0) !important;
+}
+
+.formHidden {
+    display: none;
 }
