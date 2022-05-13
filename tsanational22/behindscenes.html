@@ -16,6 +16,9 @@
     <!-- Bootstrap JS -->
     <script type="text/javascript" src="js/bootstrap.js"></script>  
 
+    <!-- Video JS -->
+    <script type="text/javascript" src="js/video.js"></script>
+
     <!-- Imports Site Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -238,12 +241,12 @@
         </div>
         <!-- Door 4 Modal -->
         <div>
-            <div class="modal fade" id="modalBehind4" tabindex="-1" aria-labelledby="behindScenes4" aria-hidden="true">
+            <div class="modal fade" id="modalBehind4" tabindex="-1" aria-labelledby="behindScenes4" aria-hidden="true" onclick="stopVideo()">
                 <div class="modal-dialog modal-xl modal-fullscreen-md-down modal-dialog-centered object-modal">
                     <div class="modal-content">
                         <div class="modal-header modalBehind bg-dark text-light">
                             <h5 class="modal-title">Advertising</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" onclick="stopVideo()"></button>
                         </div>
                         <div class="modal-body modalBehind bg-dark text-light container-fluid d-flex">
                                 <div class="row justify-content-center my-auto">
@@ -253,7 +256,7 @@
                                         </p>
                                     </div>
                                     <div class="col-12 col-md-8 modal-object-img-div text-center">
-                                        <video width="720" height="480" controls class="w-100"> -->
+                                        <video width="720" height="480" controls class="w-100" id="videoPlayer"> -->
                                             <source src="images/Trailer_1.mp4" type="video/mp4">
                                             Your browser does not support the video tag.
                                         </video>
@@ -276,8 +279,8 @@
                 <!-- Contact Column -->
                 <div class="col-md-4 col-12 mb-md-0 mb-2">
                     <p class="m-0">Contact Us!</p>
-                    <p class="m-0"><i class="fas fa-phone-alt"></i> (206) 555-1212</p>
-                    <p class="m-0"><i class="fas fa-envelope"></i> info@voidentertainmentus.com</p>
+                    <p class="m-0"><i class="fas fa-phone-alt"></i> (206) 555-0166</p>
+                    <p class="m-0"><i class="fas fa-envelope"></i> info@voidentus.com</p>
                 </div>
                 <!-- Social Media Column -->
                 <div class="col-md-4 col-12 mb-md-0 mb-2">
