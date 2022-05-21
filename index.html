@@ -7,7 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded&family=Noto+Emoji&display=swap" rel="stylesheet"> 
     <title>Will Paxton</title>
     <style>
-        * {
+        body {
             font-family: 'Encode Sans Expanded', 'Comic Sans MS', sans-serif;
         }
         .emoji {
@@ -32,9 +32,26 @@
             font-size: 24px;
         }
     </style>
+
+    <script>
+        function comic_sansify() {
+            const body = document.querySelector('.body');
+
+            // change text color to white
+            body.style.fontFamily = "'Comic Sans MS', sans-serif";
+
+            
+        }
+        
+
+        document.getElementById('secret_button').addEventListener('click', function () {
+            this.style.display = 'none';
+            console.log("Secret Button Pressed")
+        });
+    </script>
 </head>
 
-<body class="bg-dark text-light px-md-0 px-4">
+<body class="bg-dark text-light px-md-0 px-4 body">
     <div class="my-5 container">
         <div class="col-12 text-center py-5 rounded">
             <h1>Hello World!</h1>
@@ -49,6 +66,7 @@
             </div>
             <div class="p-0 text-end col-6">
                 <div>
+                    <button class="btn btn-primary h-100" id="secret_button" onclick="comic_sansify()"><span class="footer_button_image emoji">😁</span></button>
                     <a href="newpage"><button class="btn btn-primary h-100"><span class="footer_button_image emoji">🐢</span></button></a>
                     <a href="https://github.com/willpaxton/willpaxton.dev"><button class=" btn btn-primary h-100"><img class="footer_button_image" src="assets/GitHub-Mark-Light-32px.png"></button></a>
                 </div>
