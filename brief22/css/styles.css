@@ -1,0 +1,330 @@
+/* global css */
+* {
+    margin: 0;
+    padding: 0;
+    transition: all 0.5s ease;
+    font-family: 'Work Sans', sans-serif;
+}
+body {
+    /* height: 100vh; */
+}
+
+
+/* Void Entertainment Logo */
+#navImgImg {
+    width: 160px;
+    margin: 16px 0px;
+}
+
+/* global button override styles */
+button {
+    background-color: #4d1f8c !important;
+    border-color: #410091 !important;
+}
+
+.btn-check:focus + .btn, .btn:focus {
+    box-shadow: 0 0 0 0.25rem rgba(100, 0, 219, 0.25) !important;
+}
+
+.modalButton {
+    background-color: rgba(0, 0, 0, 0) !important;
+    border-color: rgba(0, 0, 0, 0) !important;
+    padding: 0;
+}
+
+.modalButton:focus {
+    box-shadow: none !important;
+}
+
+.btn-close {
+    background-color: red !important;
+}
+
+
+/* Sets color of alert bar on home page */
+.alertBar {
+    background-color: #4d1f8c;
+}
+
+/* primary background override */
+.bg-primary {
+    background-color: #4d1f8c !important;
+}
+
+
+/* Sets button height in bottom nav on home page */
+.conferenceHomeA{
+    height: 20vh;
+    border-radius: 12px;
+    border-color: #4c1f8c7e !important;
+    border-width: 1px;
+}
+
+
+/* Animated Button: https://codepen.io/konradwax/pen/woPNqJ */
+
+.animatedButton > button {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.animatedButton > button::after, .behindScenesButton::after {
+    content: '>';
+    position: absolute;
+    opacity: 0;  
+    right: -4px;
+    transition: 0.5s;
+}
+
+.animatedButton > button:hover{
+    padding-right: 24px;
+    padding-left:8px;
+}
+
+.animatedButton > button:hover:after {
+    opacity: 1;
+    right: 10px;
+}
+
+
+/* Headers for standard and conference pages */
+.pageHeader {
+    background-color: #4d1f8c;
+}
+
+.pageConfHeader {
+    background-color: #4d1f8c;
+}
+
+/* sets text color for headers */
+.pageHeader div div h1 {
+    color: white;
+}
+
+.pageConfHeader div div h1 {
+    color: white;
+}
+
+
+/* timeline https://www.bootdey.com/snippets/view/timeline-events#preview */
+
+.timelineR {
+    border-left: #fff solid 1px;
+}
+
+.bullet::after {
+    content: "";
+    top: -20px;
+    left: -30px;
+    font-size: 3em;
+    width: 11px;
+    height: 11px;
+    display: block;
+    position: relative;
+    box-sizing: border-box;
+    /* box-shadow: 0 0 0 3px white; */
+    border-radius: 50%;
+    background-color:  white;
+}
+
+/* fixes a bug with firefox mobile that causes the bullets to be too far to the left */
+@-moz-document url-prefix() {
+    @media (pointer:coarse) {
+        .bullet::after {
+            left: -26px;
+        }
+    }
+}
+
+
+
+.timelineDivider {
+    height: 5vh;
+}
+
+
+/* Allows the doors to open upon order */
+.doors {
+    background-image: url(../images/door.jpg);
+    background-size: cover; 
+}
+
+.doors:hover {
+    background-image: url(../images/opendoor.jpg)
+}
+
+.modalBehindImg {
+    width: 80%;
+}
+
+
+
+
+
+/* sets styles for shop grid items */
+.productA {
+    cursor: pointer;
+    /* color: black; */
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+
+/* Social Media Icons */
+.fab {
+    font-size: 1.5em;
+    margin-right: .25em;
+}
+
+.fa-facebook:hover {
+    color: #3b5998 !important;
+}
+
+.fa-twitter:hover {
+    color: #1DA1F2 !important;
+}
+
+.fa-instagram:hover {
+    color: #C23584 !important;
+}
+
+.fa-linkedin-in:hover {
+    color: #0077b5 !important;
+}
+
+.fa-behance:hover {
+    color: #1769ff !important;
+}
+
+.fa-facebook:hover, .fa-twitter:hover, .fa-instagram:hover, .fa-linkedin-in:hover, .fa-behance:hover {
+    cursor: pointer;
+}
+
+.fa-facebook, .fa-twitter, .fa-instagram, .fa-linkedin-in, .fa-behance {
+    color: white;
+}
+
+
+/* sets cursor for closed shop modals and inactive demos */
+.shopItemModalButton {
+    cursor: not-allowed;
+}
+
+.demoBlank:hover {
+    cursor:not-allowed;
+    text-decoration: none;
+}
+
+
+/* background for behind the scenes page */
+.behindTheScenesBody {
+    background: radial-gradient(#270a35, #111);
+}
+
+
+
+
+
+/* -----national additions----- */
+
+
+/* adds a background to the call to action */
+.callToAction {
+    background-image: url("../images/pcbpurp.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/* below are some general classes used at certain points, styled after bootstrap or meant to override bootstrap */
+.bg-clear {
+    background-color: transparent;
+}
+
+.bg-dark {
+    background-color: #111 !important;
+}
+
+.text-light {
+    color: #eee !important;
+}
+
+.vh-75 {
+    height: 75vh;
+}
+
+/* .vh-50 {
+    height: 50vh;
+} */
+
+.round {
+    border-radius: 8px !important;
+}
+
+
+/* overrides color of navbar and footer */
+.navbar, .footer {
+    background-color: #090909 !important;
+}
+
+/* used to change styles of horizontal bars on home page */
+.homeHr {
+    background-color: #fff;
+    height: 2px !important; 
+    border: none;
+}
+
+.carousel-control-prev, .carousel-control-next {
+    background-color: rgb(0,0,0,0) !important;
+}
+
+/* hides the status text for the form */
+.formHidden {
+    display: none;
+}
+
+
+
+
+/* This styles are for the home page form */
+
+input, textarea, select{
+    background-color:#222 !important;
+    color: #eee !important;
+}
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    #ccc !important;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:    #ccc !important;
+    opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:    #ccc !important;
+    opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color:    #ccc !important;
+}
+::-ms-input-placeholder { /* Microsoft Edge */
+    color:    #ccc !important;
+}
+
+::placeholder { /* Most modern browsers support this now. */
+    color:    #ccc !important;
+}
+
+.form-check-input:checked {
+    border-color: #4d1f8c !important;
+}
+
+input:focus, textarea:focus, select:focus {
+    box-shadow: 0 0 0 0.25rem #4d1f8c40 !important;
+}
+
+select option:checked {
+    background: #4d1f8c !important;
+}
