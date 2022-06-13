@@ -8,6 +8,9 @@
 body {
     /* height: 100vh; */
 }
+a:hover {
+    cursor: pointer;
+}
 
 
 /* Void Entertainment Logo */
